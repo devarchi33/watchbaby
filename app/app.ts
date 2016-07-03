@@ -1,11 +1,10 @@
 import {Component} from '@angular/core';
 import {Platform, ionicBootstrap} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
-import {HomePage} from './pages/home/home';
 import {LoginPage} from './pages/login/login';
-import {SetInterestPage} from './pages/set-interest/set-interest';
-import {MainPage} from './pages/main/main';
 import {TabMenu} from './pages/tabs/tabs';
+import {SetInterestPage} from './pages/set-interest/set-interest';
+import {HomePage} from './pages/home/home';
 
 
 @Component({
@@ -15,7 +14,6 @@ export class MyApp {
     // rootPage: any = HomePage;
     // rootPage: any = LoginPage;
     // rootPage: any = SetInterestPage;
-    // rootPage: any = MainPage;
     rootPage:any = TabMenu;
 
     constructor(platform:Platform) {

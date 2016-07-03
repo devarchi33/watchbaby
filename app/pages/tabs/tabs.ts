@@ -6,7 +6,6 @@ import {NavController, NavParams} from 'ionic-angular';
 import {ViewController, Platform} from 'ionic-angular';
 import {HomePage} from "../home/home";
 import {SetInterestPage} from "../set-interest/set-interest";
-import {MainPage} from "../main/main";
 import {LoginPage} from "../login/login";
 
 @Component({
@@ -33,14 +32,12 @@ class TabTextPage {
     <ion-tabs class="tabs-basic">
       <ion-tab tabTitle="Home" [root]="tabOne"></ion-tab>
       <ion-tab tabTitle="Interest" [root]="tabTwo"></ion-tab>
-      <ion-tab tabTitle="Main" [root]="tabThree"></ion-tab>
-      <ion-tab tabTitle="Login" [root]="tabFour"></ion-tab>
+      <ion-tab tabTitle="Login" [root]="tabThree"></ion-tab>
     </ion-tabs>
 `
 })
 export class TabMenu {
     tabOne = HomePage;
     tabTwo = SetInterestPage;
-    tabThree = MainPage;
-    tabFour = LoginPage;
+    tabThree = LoginPage;
 }
