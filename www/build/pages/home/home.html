@@ -1,16 +1,16 @@
 <ion-header>
     <ion-navbar>
         <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
-        <ion-list>
-            <ion-item *ngFor="let item of items">
-                {{ item }}
-            </ion-item>
-        </ion-list>
+        <!--<ion-list>-->
+        <!--<ion-item *ngFor="let item of items">-->
+        <!--{{ item }}-->
+        <!--</ion-item>-->
+        <!--</ion-list>-->
         <!--.search bar-->
     </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="cards-bg">
     <ion-slides pager>
         <ion-slide *ngFor="let slide of slides">
             <img [src]="slide.image" class="slide-image"/>
@@ -19,103 +19,331 @@
         </ion-slide>
     </ion-slides>
     <!--.slides-->
-    <ion-grid>
-        <ion-row>
-            <ion-col width-50>
-                <ion-card>
-                    <ion-card-header>
-                        <ion-label>Catelyn Stark</ion-label>
+    <ion-item-group>
+        <ion-item-divider light>치약</ion-item-divider>
+    </ion-item-group>
+    <ion-row>
+        <ion-col width-50>
+            <ion-card>
+                <ion-item>
+                    <ion-avatar item-left>
+                        <img src="images/marty-avatar.png">
+                    </ion-avatar>
+                    <h2>Marty McFly</h2>
+                    <p>November 5, 1955</p>
+                </ion-item>
 
-                    </ion-card-header>
-                    <ion-card-content>
-                        The British use the term "header", but the American term "head-shot" the English simply refuse
-                        to adopt.
-                    </ion-card-content>
-                    <ion-row>
-                        <ion-checkbox kakao checked="true" padding=""></ion-checkbox>
-                    </ion-row>
-                </ion-card>
-            </ion-col>
-            <ion-col width-50>
-                <ion-card>
-                    <ion-card-header>
-                        <ion-label>Catelyn Stark</ion-label>
+                <img src="images/advance-card-bttf.png">
 
-                    </ion-card-header>
-                    <ion-card-content>
-                        The British use the term "header", but the American term "head-shot" the English simply refuse
-                        to adopt.
-                    </ion-card-content>
-                    <ion-row>
-                        <ion-checkbox kakao checked="true" padding=""></ion-checkbox>
-                    </ion-row>
-                </ion-card>
-            </ion-col>
-        </ion-row>
-        <ion-row>
-            <ion-col width-50>
-                <ion-card>
-                    <ion-card-header>
-                        <ion-label>Catelyn Stark</ion-label>
+                <ion-card-content>
+                    <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine...
+                        out of a
+                        DeLorean?! Whoa. This is heavy.</p>
+                </ion-card-content>
 
-                    </ion-card-header>
-                    <ion-card-content>
-                        The British use the term "header", but the American term "head-shot" the English simply refuse
-                        to adopt.
-                    </ion-card-content>
-                    <ion-row>
-                        <ion-checkbox kakao checked="true" padding=""></ion-checkbox>
-                    </ion-row>
-                </ion-card>
-            </ion-col>
-            <ion-col width-50>
-                <ion-card>
-                    <ion-card-header>
-                        <ion-label>Catelyn Stark</ion-label>
+                <ion-row>
+                    <ion-col>
+                        <button primary clear small>
+                            <ion-icon name="thumbs-up"></ion-icon>
+                            <div>12 Likes</div>
+                        </button>
+                    </ion-col>
+                    <ion-col>
+                        <button primary clear small>
+                            <ion-icon name="text"></ion-icon>
+                            <div>4 Comments</div>
+                        </button>
+                    </ion-col>
+                    <ion-col center text-center>
+                        <ion-note>
+                            11h ago
+                        </ion-note>
+                    </ion-col>
+                </ion-row>
+            </ion-card>
+        </ion-col>
+        <ion-col width-50>
+            <ion-card>
+                <ion-item>
+                    <ion-avatar item-left>
+                        <img src="images/marty-avatar.png">
+                    </ion-avatar>
+                    <h2>Marty McFly</h2>
+                    <p>November 5, 1955</p>
+                </ion-item>
 
-                    </ion-card-header>
-                    <ion-card-content>
-                        The British use the term "header", but the American term "head-shot" the English simply refuse
-                        to adopt.
-                    </ion-card-content>
-                    <ion-row>
-                        <ion-checkbox kakao checked="true" padding=""></ion-checkbox>
-                    </ion-row>
-                </ion-card>
-            </ion-col>
-        </ion-row>
-        <ion-row>
-            <ion-col width-50>
-                <ion-card>
-                    <ion-card-header>
-                        <ion-label>Catelyn Stark</ion-label>
+                <img src="images/advance-card-bttf.png">
 
-                    </ion-card-header>
-                    <ion-card-content>
-                        The British use the term "header", but the American term "head-shot" the English simply refuse
-                        to adopt.
-                    </ion-card-content>
-                    <ion-row>
-                        <ion-checkbox kakao checked="true" padding=""></ion-checkbox>
-                    </ion-row>
-                </ion-card>
-            </ion-col>
-            <ion-col width-50>
-                <ion-card>
-                    <ion-card-header>
-                        <ion-label>Catelyn Stark</ion-label>
+                <ion-card-content>
+                    <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine...
+                        out of a
+                        DeLorean?! Whoa. This is heavy.</p>
+                </ion-card-content>
 
-                    </ion-card-header>
-                    <ion-card-content>
-                        The British use the term "header", but the American term "head-shot" the English simply refuse
-                        to adopt.
-                    </ion-card-content>
-                    <ion-row>
-                        <ion-checkbox kakao checked="true" padding=""></ion-checkbox>
-                    </ion-row>
-                </ion-card>
-            </ion-col>
-        </ion-row>
-    </ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <button primary clear small>
+                            <ion-icon name="thumbs-up"></ion-icon>
+                            <div>12 Likes</div>
+                        </button>
+                    </ion-col>
+                    <ion-col>
+                        <button primary clear small>
+                            <ion-icon name="text"></ion-icon>
+                            <div>4 Comments</div>
+                        </button>
+                    </ion-col>
+                    <ion-col center text-center>
+                        <ion-note>
+                            11h ago
+                        </ion-note>
+                    </ion-col>
+                </ion-row>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col width-50>
+            <ion-card>
+                <ion-item>
+                    <ion-avatar item-left>
+                        <img src="images/marty-avatar.png">
+                    </ion-avatar>
+                    <h2>Marty McFly</h2>
+                    <p>November 5, 1955</p>
+                </ion-item>
+
+                <img src="images/advance-card-bttf.png">
+
+                <ion-card-content>
+                    <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine...
+                        out of a
+                        DeLorean?! Whoa. This is heavy.</p>
+                </ion-card-content>
+
+                <ion-row>
+                    <ion-col>
+                        <button primary clear small>
+                            <ion-icon name="thumbs-up"></ion-icon>
+                            <div>12 Likes</div>
+                        </button>
+                    </ion-col>
+                    <ion-col>
+                        <button primary clear small>
+                            <ion-icon name="text"></ion-icon>
+                            <div>4 Comments</div>
+                        </button>
+                    </ion-col>
+                    <ion-col center text-center>
+                        <ion-note>
+                            11h ago
+                        </ion-note>
+                    </ion-col>
+                </ion-row>
+            </ion-card>
+        </ion-col>
+        <ion-col width-50>
+            <ion-card>
+                <ion-item>
+                    <ion-avatar item-left>
+                        <img src="images/marty-avatar.png">
+                    </ion-avatar>
+                    <h2>Marty McFly</h2>
+                    <p>November 5, 1955</p>
+                </ion-item>
+
+                <img src="images/advance-card-bttf.png">
+
+                <ion-card-content>
+                    <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine...
+                        out of a
+                        DeLorean?! Whoa. This is heavy.</p>
+                </ion-card-content>
+
+                <ion-row>
+                    <ion-col>
+                        <button primary clear small>
+                            <ion-icon name="thumbs-up"></ion-icon>
+                            <div>12 Likes</div>
+                        </button>
+                    </ion-col>
+                    <ion-col>
+                        <button primary clear small>
+                            <ion-icon name="text"></ion-icon>
+                            <div>4 Comments</div>
+                        </button>
+                    </ion-col>
+                    <ion-col center text-center>
+                        <ion-note>
+                            11h ago
+                        </ion-note>
+                    </ion-col>
+                </ion-row>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-item-group>
+        <ion-item-divider light>샴푸</ion-item-divider>
+    </ion-item-group>
+    <ion-row>
+        <ion-col width-50>
+            <ion-card>
+                <ion-item>
+                    <ion-avatar item-left>
+                        <img src="images/marty-avatar.png">
+                    </ion-avatar>
+                    <h2>Marty McFly</h2>
+                    <p>November 5, 1955</p>
+                </ion-item>
+
+                <img src="images/advance-card-bttf.png">
+
+                <ion-card-content>
+                    <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine...
+                        out of a
+                        DeLorean?! Whoa. This is heavy.</p>
+                </ion-card-content>
+
+                <ion-row>
+                    <ion-col>
+                        <button primary clear small>
+                            <ion-icon name="thumbs-up"></ion-icon>
+                            <div>12 Likes</div>
+                        </button>
+                    </ion-col>
+                    <ion-col>
+                        <button primary clear small>
+                            <ion-icon name="text"></ion-icon>
+                            <div>4 Comments</div>
+                        </button>
+                    </ion-col>
+                    <ion-col center text-center>
+                        <ion-note>
+                            11h ago
+                        </ion-note>
+                    </ion-col>
+                </ion-row>
+            </ion-card>
+        </ion-col>
+        <ion-col width-50>
+            <ion-card>
+                <ion-item>
+                    <ion-avatar item-left>
+                        <img src="images/marty-avatar.png">
+                    </ion-avatar>
+                    <h2>Marty McFly</h2>
+                    <p>November 5, 1955</p>
+                </ion-item>
+
+                <img src="images/advance-card-bttf.png">
+
+                <ion-card-content>
+                    <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine...
+                        out of a
+                        DeLorean?! Whoa. This is heavy.</p>
+                </ion-card-content>
+
+                <ion-row>
+                    <ion-col>
+                        <button primary clear small>
+                            <ion-icon name="thumbs-up"></ion-icon>
+                            <div>12 Likes</div>
+                        </button>
+                    </ion-col>
+                    <ion-col>
+                        <button primary clear small>
+                            <ion-icon name="text"></ion-icon>
+                            <div>4 Comments</div>
+                        </button>
+                    </ion-col>
+                    <ion-col center text-center>
+                        <ion-note>
+                            11h ago
+                        </ion-note>
+                    </ion-col>
+                </ion-row>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col width-50>
+            <ion-card>
+                <ion-item>
+                    <ion-avatar item-left>
+                        <img src="images/marty-avatar.png">
+                    </ion-avatar>
+                    <h2>Marty McFly</h2>
+                    <p>November 5, 1955</p>
+                </ion-item>
+
+                <img src="images/advance-card-bttf.png">
+
+                <ion-card-content>
+                    <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine...
+                        out of a
+                        DeLorean?! Whoa. This is heavy.</p>
+                </ion-card-content>
+
+                <ion-row>
+                    <ion-col>
+                        <button primary clear small>
+                            <ion-icon name="thumbs-up"></ion-icon>
+                            <div>12 Likes</div>
+                        </button>
+                    </ion-col>
+                    <ion-col>
+                        <button primary clear small>
+                            <ion-icon name="text"></ion-icon>
+                            <div>4 Comments</div>
+                        </button>
+                    </ion-col>
+                    <ion-col center text-center>
+                        <ion-note>
+                            11h ago
+                        </ion-note>
+                    </ion-col>
+                </ion-row>
+            </ion-card>
+        </ion-col>
+        <ion-col width-50>
+            <ion-card>
+                <ion-item>
+                    <ion-avatar item-left>
+                        <img src="images/marty-avatar.png">
+                    </ion-avatar>
+                    <h2>Marty McFly</h2>
+                    <p>November 5, 1955</p>
+                </ion-item>
+
+                <img src="images/advance-card-bttf.png">
+
+                <ion-card-content>
+                    <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine...
+                        out of a
+                        DeLorean?! Whoa. This is heavy.</p>
+                </ion-card-content>
+
+                <ion-row>
+                    <ion-col>
+                        <button primary clear small>
+                            <ion-icon name="thumbs-up"></ion-icon>
+                            <div>12 Likes</div>
+                        </button>
+                    </ion-col>
+                    <ion-col>
+                        <button primary clear small>
+                            <ion-icon name="text"></ion-icon>
+                            <div>4 Comments</div>
+                        </button>
+                    </ion-col>
+                    <ion-col center text-center>
+                        <ion-note>
+                            11h ago
+                        </ion-note>
+                    </ion-col>
+                </ion-row>
+            </ion-card>
+        </ion-col>
+    </ion-row>
     <!--card-->
 </ion-content>
