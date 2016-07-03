@@ -1,2 +1,11 @@
-.login {
+.login-bg {
+  background: url('../../images/background/city1024x682.png') no-repeat center center;
+  background-size: cover;
+  opacity: 1;
+  overflow-y: hidden;
+}
+
+.login-contents {
+  position:relative;
+  top: 350px;
 }
