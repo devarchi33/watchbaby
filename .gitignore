@@ -6,3 +6,4 @@ platforms/
 .idea/
 www/lib/
 www/build/
+.io-config.json
