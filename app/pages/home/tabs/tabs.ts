@@ -42,5 +42,5 @@ export class HomeTabMenu {
     tabOne = HomePage;
     tabTwo = SetInterestPage;
     tabThree = LoginPage;
-    tabFour = MyPage;
+    tabFour = LoginPage;
 }
