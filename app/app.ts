@@ -1,20 +1,13 @@
 import {Component} from '@angular/core';
 import {Platform, ionicBootstrap} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
-import {LoginPage} from './pages/login/login';
-import {TabMenu} from './pages/tabs/tabs';
-import {SetInterestPage} from './pages/set-interest/set-interest';
-import {HomePage} from './pages/home/home';
-
+import {HomeTabMenu} from './pages/home/tabs/tabs';
 
 @Component({
     template: '<ion-nav [root]="rootPage"></ion-nav>'
 })
 export class MyApp {
-    // rootPage: any = HomePage;
-    // rootPage: any = LoginPage;
-    // rootPage: any = SetInterestPage;
-    rootPage:any = TabMenu;
+    rootPage:any = HomeTabMenu;
 
     constructor(platform:Platform) {
         platform.ready().then(() => {
