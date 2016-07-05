@@ -7,7 +7,7 @@ import {ViewController, Platform} from 'ionic-angular';
 import {HomePage} from "../../home/home";
 import {SetInterestPage} from "../../set-interest/set-interest";
 import {LoginPage} from "../../login/login";
-import {MyPage} from "../../my-page/my-page";
+import {StoryPage} from "../../story/story";
 
 @Component({
     template: `
@@ -23,5 +23,5 @@ export class HomeTabMenu {
     tabOne = HomePage;
     tabTwo = SetInterestPage;
     tabThree = LoginPage;
-    tabFour = LoginPage;
+    tabFour = StoryPage;
 }
