@@ -4,14 +4,17 @@
     </ion-toolbar>
     <ion-content>
         <ion-list>
+            <button ion-item (click)="openPage(homePage)">
+                홈
+            </button>
             <button ion-item (click)="openPage(loginPage)">
-                Login
+                로그인
             </button>
             <button ion-item (click)="openPage(signupPage)">
-                Signup
+                회원가입
             </button>
         </ion-list>
     </ion-content>
 </ion-menu>
 
-<ion-nav [root]="rootPage" #content swipe-back-enabled="false"></ion-nav>
+<ion-nav [root]="rootPage" #content swipe-back-enabled="true"></ion-nav>
