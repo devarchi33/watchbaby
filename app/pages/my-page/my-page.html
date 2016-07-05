@@ -8,6 +8,26 @@
 
     <profile></profile>
 
-    <review></review>
+    <ion-row>
+        <ion-toolbar [attr.dark]="isAndroid ? '' : null" no-border-top>
+            <ion-segment [(ngModel)]="review" [attr.light]="isAndroid ? '' : null">
+                <ion-segment-button value="my">
+                    나의 리뷰
+                </ion-segment-button>
+                <ion-segment-button value="scrap">
+                    스크랩 리뷰
+                </ion-segment-button>
+            </ion-segment>
+        </ion-toolbar>
+    </ion-row>
+
+    <div [ngSwitch]="review">
+        <ion-list *ngSwitchWhen="'my'">
+            <review></review>
+        </ion-list>
+        <ion-list *ngSwitchWhen="'scrap'">
+            <profile></profile>
+        </ion-list>
+    </div>
 
 </ion-content>
