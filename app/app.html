@@ -1,0 +1,17 @@
+<ion-menu [content]="content">
+    <ion-toolbar>
+        <ion-title>Watch Baby</ion-title>
+    </ion-toolbar>
+    <ion-content>
+        <ion-list>
+            <button ion-item (click)="openPage(loginPage)">
+                Login
+            </button>
+            <button ion-item (click)="openPage(signupPage)">
+                Signup
+            </button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipe-back-enabled="false"></ion-nav>
