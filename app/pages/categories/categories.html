@@ -1,0 +1,38 @@
+<!--
+  Generated template for the CategoriesPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+    <commons-header></commons-header>
+
+</ion-header>
+
+<ion-content>
+
+    <ion-row>
+        <ion-toolbar [attr.dark]="isAndroid ? '' : null" no-border-top>
+            <ion-segment [(ngModel)]="filter" [attr.light]="isAndroid ? '' : null">
+                <ion-segment-button value="product">
+                    제품 군
+                </ion-segment-button>
+                <ion-segment-button value="sort">
+                    정렬
+                </ion-segment-button>
+            </ion-segment>
+        </ion-toolbar>
+    </ion-row>
+
+    <div [ngSwitch]="filter">
+        <ion-list *ngSwitchWhen="'product'">
+            <p>프로덕트</p>
+        </ion-list>
+        <ion-list *ngSwitchWhen="'sort'">
+            <p>정렬</p>
+        </ion-list>
+    </div>
+
+</ion-content>
