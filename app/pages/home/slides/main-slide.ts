@@ -12,8 +12,8 @@ export class MainSlidePage {
 
     private slides;
     private slideOptions = {
-        initialSlide: 2,
-        autoplay: 500,
+        initialSlide: 0,
+        autoplay: 3000,
         pager: true,
         loop: true
     };
