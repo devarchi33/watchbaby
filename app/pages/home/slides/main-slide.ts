@@ -11,6 +11,12 @@ import {NavController} from 'ionic-angular';
 export class MainSlidePage {
 
     private slides;
+    private slideOptions = {
+        initialSlide: 2,
+        autoplay: 500,
+        pager: true,
+        loop: true
+    };
 
     constructor(private navController:NavController) {
         this.initializeSlides();
