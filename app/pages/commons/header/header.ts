@@ -3,12 +3,10 @@
  */
 import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
-import {MainSearchPage} from '../../home/search/main-search';
-import {MyPage} from "../../my-page/my-page";
+import {MainSearchPage} from '../search/main-search';
 
 @Component({
     selector: 'commons-header',
-    directives: [MainSearchPage],
     templateUrl: 'build/pages/commons/header/header.html'
 })
 
@@ -17,7 +15,7 @@ export class HeaderPage {
     constructor(private navController:NavController) {
     };
 
-    moveMyPage() {
-        this.navController.push(MyPage);
+    moveSearchPage() {
+        this.navController.push(MainSearchPage);
     };
 }

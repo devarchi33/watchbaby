@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {Platform, ionicBootstrap, MenuController} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {HomeTabMenu} from './pages/home/tabs/tabs';
+import {MyPage} from './pages/my-page/my-page';
 import {LoginPage} from './pages/login/login';
 import {SignupPage} from './pages/signup/signup';
 
@@ -11,6 +12,7 @@ import {SignupPage} from './pages/signup/signup';
 export class MyApp {
     private rootPage:any = HomeTabMenu;
     private homePage = HomeTabMenu;
+    private myPage = MyPage;
     private loginPage = LoginPage;
     private signupPage = SignupPage;
 
