@@ -2,10 +2,10 @@
     <ion-item-divider light>베이비 파우더</ion-item-divider>
 </ion-item-group>
 <ion-row>
-    <ion-col width-50 *ngFor="let card of cardsL; let i=index">
+    <ion-col width-50 *ngFor="let card of cards; let i=index">
         <ion-card>
             <ion-item>
-                <h2 [innerHTML]="card.title + (i + 1)"></h2>
+                <h2 [innerHTML]="card.title + (i + 3)"></h2>
                 <p [innerHTML]="card.date"></p>
             </ion-item>
 
