@@ -28,10 +28,10 @@
 
     <div [ngSwitch]="filter">
         <ion-list *ngSwitchWhen="'product'">
-            <p>프로덕트</p>
+            <card-toothpaste></card-toothpaste>
         </ion-list>
         <ion-list *ngSwitchWhen="'sort'">
-            <p>정렬</p>
+            <card-baby-powder></card-baby-powder>
         </ion-list>
     </div>
 
