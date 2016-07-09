@@ -5,6 +5,7 @@ import {HomeTabMenu} from './pages/home/tabs/tabs';
 import {MyPage} from './pages/my-page/my-page';
 import {LoginPage} from './pages/login/login';
 import {SignupPage} from './pages/signup/signup';
+import {TodoService} from "./service/todo-service";
 
 @Component({
     templateUrl: 'build/app.html'
@@ -42,4 +43,4 @@ export class MyApp {
 }
 
 
-ionicBootstrap(MyApp);
+ionicBootstrap(MyApp, [TodoService]);
